@@ -1,3 +1,13 @@
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
 /* Reset               */
 
 *,
@@ -86,14 +96,17 @@ select {
 }
 
 
-.box {
-    background: lightblue;
-    padding: 3rem;
-}
+/* colors */
 
-.call-to-action {
-    --gap: 5rem;
-    background: pink;
-    padding: 2rem;
-    border-radius: 1rem;
+.bg-dark { background-color: hsl( var(--clr-dark) );}
+.bg-accent { background-color: hsl( var(--clr-light) );}
+.bg-white { background-color: hsl( var(--clr-white) );}
+
+.text-dark { color: hsl( var(--clr-dark) );}
+.text-accent { color: hsl( var(--clr-light) );}
+.text-white { color: hsl( var(--clr-white) );}
+
+
+.example-component {
+    background-color: hsl( var(--clr-light) / .2 );
 }
